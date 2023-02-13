@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@200;400;800&display=swap');
+*{
+    font-family: "Sofia Sans Semi Condensed";
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+.menu {
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul {
+    display: flex;
+}
+.menu a {
+    padding: 30px;
+    display: block;
+    font-size: 18px;
+}
+.menu a:hover {
+    background-color: rgb(58, 80, 58);
+    color: white;
+    transition: 0.8s;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.card {
+    overflow: hidden;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(142, 204, 142);
+    border: 1px solid rgb(22, 21, 21);
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+.card h3 {
+    font-size: 30px;
+}
+.card p {
+    font-size: 25px;
+    text-shadow: 0px 0px 10px rgb(36, 31, 68);
+}
+img {
+    width: 100%;
+}
