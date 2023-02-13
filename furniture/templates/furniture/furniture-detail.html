@@ -6,6 +6,17 @@
 {% block title %} {{ furniture.title }} {% endblock title %}
 {% block content %}
 <div class="container">
-    <h1>{{ furniture.title }}</h1>
+    <div class="horizontal-card">
+        <img src="{{ furniture.image.url }}" alt="">
+        <div class="right">
+            <h1>{{ furniture.title }}</h1>
+            <h3>{{ furniture.type.name }}</h3>
+            <p>{{ furniture.description }}</p>
+            <p>{{ furniture.price }} руб.</p>
+            <p>Производитель: {{ furniture.owner.username }}</p>
+            <p>Время добавления {{ furniture.created }}</p>
+            <p>Время последнего обновления {{ furniture.updated }}</p>
+        </div>
+    </div>
 </div>
 {% endblock content %}
