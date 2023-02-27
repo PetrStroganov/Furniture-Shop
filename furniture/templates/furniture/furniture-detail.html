@@ -14,8 +14,8 @@
             <p>{{ furniture.description }}</p>
             <p>{{ furniture.price }} руб.</p>
             <p>Производитель: {{ furniture.owner.username }}</p>
-            <p>Время добавления {{ furniture.created }}</p>
-            <p>Время последнего обновления {{ furniture.updated }}</p>
+            <p>Время добавления {{ furniture.created|date:"d.m.Y H:i:s" }}</p>
+            <p>Время последнего обновления {{ furniture.updated|date:"d.m.Y H:i:s" }}</p>
         </div>
     </div>
 </div>

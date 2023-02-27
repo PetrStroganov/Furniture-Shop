@@ -21,7 +21,7 @@ class Furniture(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     image = models.ImageField(blank=True, null=True)
-    slug = models.SlugField(unique=True)
+    slug = models.SlugField(unique=True, allow_unicode=True)
 
     def __str__(self) -> str:
         return self.title
